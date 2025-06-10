@@ -12,6 +12,9 @@ function Container () {
 }
 */
 //Class
+
+//import { useState } from "react"
+
 /*import React from 'react'
 interface ContainerProps {
     nome: string,
@@ -41,13 +44,14 @@ class Container extends React.Component<ContainerProps,ContainerInfoState>{
         )
     }
 }*/
+import { useState } from "react"
 interface ContainerProps {
     nome: string
 }
 function Container (props:ContainerProps){
-    let texto = "Texto Antes de Mudar"
+    const [texto,setTexto] = useState("Texto Antes de Mudar")
     function mudar(){
-
+        setTexto ("Texto Depois de Mudar")
     }
     return(
         <>

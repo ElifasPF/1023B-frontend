@@ -1,0 +1,30 @@
+:root{
+    --cor-primaria: #ee4d2d;
+    --gradient-primario: liner-gradient(#ee4d2d, #ff7337)
+    
+}
+header{
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul{
+    margin: 0px;
+    display: flex;
+}
+nav>ul>li{
+    list-style: none;
+    padding: 0px 10px;
+}
+.header-links>a{
+    padding: 0px 4px;
+}
+.header-container{
+    display: flex;
+}
