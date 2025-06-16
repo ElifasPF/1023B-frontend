@@ -7,7 +7,7 @@ import Header from './Header.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Header/>
-    <Container nome='Body'/>
+    <Container/>
   </StrictMode>,
 )
 
