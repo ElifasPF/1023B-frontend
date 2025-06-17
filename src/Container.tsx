@@ -45,6 +45,8 @@ class Container extends React.Component<ContainerProps,ContainerInfoState>{
     }
 }*/
 import React, { useState } from "react"
+import './Container.css'
+
 interface ProdutosState {
     id:number
     nome:string
@@ -93,12 +95,14 @@ function Container (){
 
     return(
         <>
+        <div className="container">
           <div className="container-cadastro">
-            <form onSubmit={trataForm}>
-                <input type="text" name="id" id="id" onChange={trataID}/>
-                <input type="text" name="nome" id="nome" onChange={trataNome}/>
-                <input type="text" name="preco" id="preco" onChange={trataPreco}/>
-                <input type="text" name="categoria" id="categoria" onChange={trataCategoria}/>
+            <form onSubmit={trataForm} >
+                <h1>Cadastro Produto</h1>
+                <input type="text" name="id" id="id" placeholder="Id" onChange={trataID}/>
+                <input type="text" name="nome" id="nome" placeholder="Nome" onChange={trataNome}/>
+                <input type="text" name="preco" id="preco" placeholder="Preço" onChange={trataPreco}/>
+                <input type="text" name="categoria" placeholder="Categoria" id="categoria" onChange={trataCategoria}/>
                 <input type="submit" value="Cadastrar" />
             </form>
           </div>     
@@ -119,6 +123,7 @@ function Container (){
                 )
             })}
           </div>
+        </div>
         </>
     )
 }
